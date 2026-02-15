@@ -1,0 +1,144 @@
+/*
+display: flex; makes an element a flex container, enabling flexible layouts where its direct children (flex items) can align and distribute
+ space dynamically. flex-wrap: wrap; modifies this by allowing flex items to wrap onto multiple lines if they exceed the container's width,\
+  instead of staying on a single line (default is nowrap). Together, they create a responsive, grid-like layout where items adjust and wrap based on available space.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #212020;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    text-align:center;
+
+}
+header h1{
+    font-size:1.4rem;
+    font-weight:500;
+    color:#f4e28d;
+}
+
+header p{
+font-size:1rem;    
+color: whitesmoke;
+}
+.game-status{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:whitesmoke;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+.game-status h2{
+    font-size:1.6rem;
+    margin-bottom:0;
+    margin-top:0.5rem;
+}
+.game-status p{
+    font-size:1.3rem;
+    margin-top:1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.language-chips{
+display: flex;
+flex-wrap:wrap;
+gap:0.5rem;
+justify-content: center;
+margin-top: 1.9rem;
+}
+span{
+    border-radius: 0.5rem;
+    padding:0.7rem
+}
+.word{
+    display:flex;
+    justify-content:center;
+    gap:0.2rem
+}
+.word span{
+    background-color: #323233;
+
+    color: white;
+    margin-top:1.2rem;
+    font-size: 1.4rem;
+    border-bottom:1px solid #f9f4da
+}
+.keyboard {
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.4rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.keyboard button{
+    padding:0.7rem;
+    font-size:1.3rem ;
+    cursor: pointer;
+
+}
+
+.new-game{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.new-game button{
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    background-color: rgb(216, 31, 155);
+    border: none;
+    border-radius: 0.2rem;
+}
+.language-chips span{
+    position: relative;
+    /*
+    issue:
+    issue:display: The .lost::before CSS rule is applied to all elements with the lost class,
+     but the ::before pseudo-element’s position: absolute causes it to position relative to the nearest positioned ancestor
+      or the entire page (body) if none exists.
+     Since no parent of the <span> (the chip) has position: relative, the ::before pseudo-element spans the entire page,
+      covering everything with its width: 100%, height: 100%, and background-color: rgba(0, 0, 0, 0.7).;
+    fix:
+To ensure the ::before pseudo-element only overlays the specific <span> (HTML chip), set the parent <span> to position: relative
+ so it acts as the positioning container for the ::before pseudo-element.
+
+    */
+}
+
+
+.lost::before {
+    content: "💀";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.keyboard button:disabled{
+    cursor: not-allowed;
+}
+
+
+
