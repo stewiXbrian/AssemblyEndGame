@@ -1,8 +1,8 @@
 # Assembly: EndGame 
 
-<img src="/public/images/img1.png" alt="Demo" width="90%" hspace="50">
+<img src="/public/img1.png" alt="Demo" width="90%" hspace="50">
 
-<img src="/public/images/img2.png" alt="Demo" width="90%" hspace="50">
+<img src="/public/img2.png" alt="Demo" width="90%" hspace="50">
 
 
 ## Intro
