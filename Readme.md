@@ -14,9 +14,9 @@ Players must guess a secret word, one letter at a time, within 8 attempts. Each 
 ## Usage
 ```bash
 
-1. clone the repo: ` git clone https://github.com/your-username/assembly-endgame.git `
+1. clone the repo: ` git clone https://github.com/stewiXbrian/AssemblyEndGame.git `
 
-2. Change to the public folder: ` cd public `
+2. Change to the Repo folder
 
 3. install dependencies: ` npm install `
 
