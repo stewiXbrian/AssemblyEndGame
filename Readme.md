@@ -7,7 +7,7 @@
 
 ## Intro
 
-Assembly: EndGame is a fun, web-based word-guessing game built with React and Vite. The mission? Protect the programming world from being overtaken by Assembly!
+Assembly: EndGame is a fun, web-based word-guessing game built with React and Vite. The mission? Protect the programming world from being overtaken by Assembly!!!
 
 Players must guess a secret word, one letter at a time, within 8 attempts. Each incorrect guess causes one of the modern programming languages (HTML, CSS, JavaScript, etc.) to be "lost." If you run out of languages before guessing the word, Assembly wins, and the programming world is doomed!
 
