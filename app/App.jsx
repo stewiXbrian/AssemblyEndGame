@@ -3,8 +3,7 @@ import getRandomWord from './words.js'
 import './style.css'
 import  {languages} from './languages.js'
 
-//i should fix later the bug in woldCharacters of choosing a char will make all occurences of the char be displayed at once not one at a time
-//adjust some design css issues
+
 
 export default function App(){
     
@@ -73,9 +72,7 @@ function startNewGame(){
             </header>
             <section  >
                 {
-                    //jsx expect expressions only so i cant put in it variable declaration or use return in it
-                    //i need to Wrap the logic in an IIFE (Immediately Invoked Function Expression)
-                    //this style:(() => {...})()
+                   
                     
                     (
                         ()=>{
