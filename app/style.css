@@ -1,8 +1,4 @@
-/*
-display: flex; makes an element a flex container, enabling flexible layouts where its direct children (flex items) can align and distribute
- space dynamically. flex-wrap: wrap; modifies this by allowing flex items to wrap onto multiple lines if they exceed the container's width,\
-  instead of staying on a single line (default is nowrap). Together, they create a responsive, grid-like layout where items adjust and wrap based on available space.
-*/
+
 
 * {
     box-sizing: border-box;
@@ -107,18 +103,7 @@ span{
 }
 .language-chips span{
     position: relative;
-    /*
-    issue:
-    issue:display: The .lost::before CSS rule is applied to all elements with the lost class,
-     but the ::before pseudo-element’s position: absolute causes it to position relative to the nearest positioned ancestor
-      or the entire page (body) if none exists.
-     Since no parent of the <span> (the chip) has position: relative, the ::before pseudo-element spans the entire page,
-      covering everything with its width: 100%, height: 100%, and background-color: rgba(0, 0, 0, 0.7).;
-    fix:
-To ensure the ::before pseudo-element only overlays the specific <span> (HTML chip), set the parent <span> to position: relative
- so it acts as the positioning container for the ::before pseudo-element.
-
-    */
+ 
 }
 
 
